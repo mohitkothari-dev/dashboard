@@ -1,3 +1,7 @@
+:root {
+  --tomato: tomato;
+}
+
 html,
 body {
   padding: 0;
