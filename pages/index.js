@@ -235,9 +235,9 @@ export default function Home() {
             >
                 <Flex alignContent="center">
                     <InputGroup bgColor="#ffffff" mb={4} border="none" borderColor="#ffffff" borderRadius="10px" mr={2}>
-                        <InputLeftElement pointerEvents="none">
-                        <FiSearch color="gray" />
-                        <InputLeftElement />
+                        <InputLeftElement pointerEvents="none" >
+                          <FiSearch color="gray" />
+                        </InputLeftElement>
                         <Input type="number" placeholder="Search" borderRadius="10px" />
                     </InputGroup>
                     <IconButton icon={<FiBell />} fontSize="sm" bgColor="#ffffff" borderRadius="50%" p="10px" />
