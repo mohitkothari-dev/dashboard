@@ -235,10 +235,9 @@ export default function Home() {
             >
                 <Flex alignContent="center">
                     <InputGroup bgColor="#ffffff" mb={4} border="none" borderColor="#ffffff" borderRadius="10px" mr={2}>
-                        <InputLeftElement
-                            pointerEvents="none"
-                            children={<FiSearch color="gray" />}
-                        />
+                        <InputLeftElement pointerEvents="none">
+                        <FiSearch color="gray" />
+                        <InputLeftElement />
                         <Input type="number" placeholder="Search" borderRadius="10px" />
                     </InputGroup>
                     <IconButton icon={<FiBell />} fontSize="sm" bgColor="#ffffff" borderRadius="50%" p="10px" />
@@ -383,18 +382,16 @@ export default function Home() {
                 </Flex>
                 <Text color="gray" mt={10} mb={2}>Card number</Text>
                 <InputGroup>
-                    <InputLeftElement
-                        pointerEvents="none"
-                        children={<FiCreditCard color="gray.700" />}
-                    />
+                    <InputLeftElement pointerEvents="none" >
+                      <FiCreditCard color="gray.700" />
+                    </InputLeftElement>
                     <Input type="number" placeholder="xxxx xxxx xxxx xxxx" />
                 </InputGroup>
                 <Text color="gray" mt={4} mb={2}>Sum</Text>
                 <InputGroup>
-                    <InputLeftElement
-                        pointerEvents="none"
-                        children={<FiDollarSign color="gray.700" />}
-                    />
+                    <InputLeftElement pointerEvents="none">
+                    <FiDollarSign color="gray.700" />
+                    </InputLeftElement>
                     <Input type="number" placeholder="130.00" />
                 </InputGroup>
                 <Button mt={4} bgColor="blackAlpha.900" color="#ffffff" p={7} borderRadius={15}>Send money</Button>
